@@ -51,6 +51,25 @@
 
 /* ------------------ Tabzilla Global tab-nav ------------------------- */
 
+.dropup {
+  display: none;
+  height: 35px;
+  width: 80px;
+  background-color: #FFF;
+  position: absolute;
+  right: 80px;
+  margin-bottom: -40px;
+  z-index: 999;
+  text-align: center;
+}
+
+#tabnav-panel {
+  background-color: #FFF;
+  li {
+    list-style: none;
+  }
+}
+
 #tabnav-panel.tabnav-closed {
   display: none;
 }
@@ -69,7 +88,6 @@
 
 .taglinelight, .taglinedark {
   font-size: 23px;
-  letter-spacing: -1px;
   position: absolute;
   right: 40px;
   bottom: 19px;
@@ -128,7 +146,7 @@
 
 /*-------- This is for project sites that want to include a project footer navigation  ----------- */
 
-footer {
+footer.container {
   background-color: @grayDark;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -520,6 +538,7 @@ hr.soften {
   margin-bottom: 0;
   background-color: transparent;
   border: 0px;
+  padding-left: 0px;
 }
 .rotating-testimonials blockquote footer{
   background-color: transparent;
@@ -570,6 +589,11 @@ hr.soften {
 .equalHero .span6 img {
 margin-top:10px;
 margin-left:10px;
+}
+
+/** equalHero Links **/
+.equalHero a {
+  text-decoration: none;
 }
 
 /** four across span3 styles **/
@@ -1109,7 +1133,7 @@ li.st-content-wrapper .st-content, .s-accordion li.s-wrap div.s-content {
  }/*end print*/
 
 
-/* --------------- Progress Status Icons ---------------------  */  
+/* --------------- Progress Status Icons ---------------------  */
 .statstart:after{ content: 'Not Started';
   color: #d84b41 !important;
   font-style: normal;
@@ -1135,7 +1159,38 @@ li.st-content-wrapper .st-content, .s-accordion li.s-wrap div.s-content {
 	color: #6bb565;
 }
 
-/* --------------- Project Icons ---------------------  */  
+/* --------------- Footer Blog Posts (Crisp) ---------------------  */
+.listPosts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  .avatar {
+    height: 15px;
+    width: 15px;
+    background-color: #ccc;
+    float: left;
+    margin-right: 5px;
+  }
+  .meta {
+    float: right;
+    margin-top: -20px;
+    text-transform: uppercase;
+    color: #a3b0bb;
+    display: block;
+    font-size: 70%;
+  }
+  .name {
+    display:block;
+    font-size:12px;
+    color:#999;
+  }
+}
+.listPosts li { padding: 5px 0 }
+.listPosts li:first-child { padding-top: 0 }
+.listPosts .last,
+.listPosts li:last-child { border: none }
+
+/* --------------- Project Icons ---------------------  */
 
 .project-icon-med {
     background: url("https://static.jboss.org/theme/images/icons/sprite-project-icons-all.png") no-repeat scroll left top transparent;
@@ -1478,7 +1533,7 @@ li.st-content-wrapper .st-content, .s-accordion li.s-wrap div.s-content {
     width: 16px;
 }
 
-/* --------------- Comments ---------------------  */  
+/* --------------- Comments ---------------------  */
 
 
 .commentcontainer {
