@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Projects
+bottom_javascripts: ['/javascripts/tooltip-init.js']
 ---
 
 
@@ -70,7 +71,7 @@ title: Projects
 .row.pagination-centered
 	.span2
 		%p<
-			%a{:href => "#", :rel => "tooltip" "top" "data-toggle", :title => "AEROGEAR | Bringing Mobile & Enterprise Together!"}
+			%a{:href => "#", :title => "AEROGEAR | Bringing Mobile & Enterprise Together!"}(data-toggle="tooltip")
 				%img(src="http://design.jboss.org/aerogear/logo/final/aerogear_icon_64px.png")
 				%h5 AeroGear
 	.span2
@@ -206,9 +207,6 @@ title: Projects
 				%h5 JBoss Build
 
 				<br>
-:javascript
-	$(function () {
-		$('a[rel=tooltip]').tooltip();
-	});
+
 
 
