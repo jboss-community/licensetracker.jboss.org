@@ -1,0 +1,214 @@
+---
+layout: project-nav
+title: Projects
+---
+
+
+/ =========================Project Header=========================
+.row-fluid.page-header
+	.span12
+		.span10
+			%h1 Projects
+		.row-fluid.controls
+			.span2
+				%div.pull-right
+					%p View Selector
+					%a.btn{:href => "projectthumbnail.html"}
+						%i.icon-th.icon-1x
+					%a.btn{:href => "projectdetail.html"}
+						%i.icon-th-list.icon-1x
+
+/ =========================Project Filter=========================
+.row-fluid.controls
+	.span12
+		%form.form-inline.well
+			%fieldset
+				.span2.control-group
+					.controls
+						%div
+						%label.checkbox
+							%input#optionsCheckbox(type="checkbox" value="Projects")
+							Projects
+						%div
+						%label.checkbox
+							%input#optionsCheckbox(type="checkbox" value="Standards")
+							Standards
+				.span3.control-group
+					.controls
+						%div
+						%label.control-label(for="select01")
+						Product
+						%select#select01
+							%option
+							%option AeroGear
+							%option APIviz
+							%option Arquillian
+							%option Blacktie
+				.span3.control-group
+					.controls
+						%div
+						%label.control-label(for="select01")
+						Solution
+						%select#select02
+							%option
+							%option AeroGear
+							%option APIviz
+							%option Arquillian
+							%option Blacktie
+				%br
+				.span4.control-group
+					.controls
+						%div
+							%form.form-search
+							%input.input-append.input-xlarge.search-query{:type => "text"}/
+							%button.btn.icon-search{:type => "submit"}
+
+
+<br>
+
+/ =========================Project Thumbnails=========================
+.row.pagination-centered
+	.span2
+		%p<
+			%a{:href => "#", :rel => "tooltip" "top" "data-toggle", :title => "AEROGEAR | Bringing Mobile & Enterprise Together!"}
+				%img(src="http://design.jboss.org/aerogear/logo/final/aerogear_icon_64px.png")
+				%h5 AeroGear
+	.span2
+		%p<
+			%a{:href => "#", :rel => "tooltip" "top" "data-toggle", :title => "Tooltip"}
+				%img(src="http://design.jboss.org/apiviz/logo/final/apiviz_icon_64px.png")
+				%h5 APIviz
+	.span2
+		%p<
+			%a{:href => "#", :rel => "tooltip" "top" "data-toggle", :title => "Tooltip"}
+				%img(src="http://design.jboss.org/arquillian/logo/final/arquillian_icon_64px.png")
+				%h5 Arquillian
+	.span2
+		%p<
+			%a{:href => "#", :rel => "tooltip" "top" "data-toggle", :title => "Tooltip"}
+				%img(src="http://design.jboss.org/blacktie/logo/images/blacktie_icon_64px.png")
+				%h5 Blacktie
+	.span2
+		%p<
+			%a{:href => "#", :rel => "tooltip" "top" "data-toggle", :title => "Tooltip"}
+				%img(src="http://design.jboss.org/stormgrind/boxgrinder/logo/final/boxgrinder_icon_64px.png")
+				%h5 BoxGrinder
+	.span2
+		%p<
+			%a{:href => "#", :rel => "tooltip" "top" "data-toggle", :title => "Tooltip"}
+				%img(src="http://design.jboss.org/byteman/logo/final/byteman_icon_64px.png")
+				%h5 Byteman
+
+				<br>
+
+	.span2
+		%p<
+			%a{:href => "#", :rel => "tooltip" "top" "data-toggle", :title => "Tooltip"}
+				%img(src="http://design.jboss.org/capedwarf/logo/final/capedwarf_icon_64px.png")
+				%h5 CapeDwarf
+	.span2
+		%p<
+		%i.blank_icon_64x.icon-minus-sign.icon-4x.icon-fixed-width
+		%p<
+			%a{:href => "#", :rel => "tooltip" "top" "data-toggle", :title => "Tooltip"}
+				%h5 Drools
+	.span2
+		%p<
+		%i.blank_icon_64x.icon-minus-sign.icon-4x.icon-fixed-width
+		%p<
+			%a{:href => "#", :rel => "tooltip" "top" "data-toggle", :title => "Tooltip"}
+				%h5 EJB3
+	.span2
+		%p<
+		%i.blank_icon_64x.icon-minus-sign.icon-4x.icon-fixed-width
+		%p<
+			%a{:href => "#", :rel => "tooltip" "top" "data-toggle", :title => "Tooltip"}
+				%h5 Embedded Jopr
+	.span2
+		%p<
+			%a{:href => "#", :rel => "tooltip" "top" "data-toggle", :title => "Tooltip"}
+				%img(src="http://design.jboss.org/errai/logo/final/errai_icon_64px.png")
+				%h5 Errai
+	.span2
+		%p<
+			%a{:href => "#", :rel => "tooltip" "top" "data-toggle", :title => "Tooltip"}
+				%img(src="http://design.jboss.org/aerogear/logo/final/aerogear_icon_64px.png")
+				%h5 eXo JCR
+
+				<br>
+
+	.span2
+		%p<
+			%a{:href => "#", :rel => "tooltip" "top" "data-toggle", :title => "Tooltip"}
+				%img(src="http://design.jboss.org/jbossforge/logo/final/jbossforge_icon_64px.png")
+				%h5 Forge
+	.span2
+		%p<
+		%i.blank_icon_64x.icon-minus-sign.icon-4x.icon-fixed-width
+		%p<
+			%a{:href => "#", :rel => "tooltip" "top" "data-toggle", :title => "Tooltip"}
+				%h5 GateIn
+	.span2
+		%p<
+			%a{:href => "#", :rel => "tooltip" "top" "data-toggle", :title => "Tooltip"}
+				%img(src="http://design.jboss.org/guvnor/logo/finals/guvnor_icon_64px.png")
+				%h5 Guvnor
+	.span2
+		%p<
+			%a{:href => "#", :rel => "tooltip" "top" "data-toggle", :title => "Tooltip"}
+				%img(src="http://design.jboss.org/hibernate/logo/final/hibernate_logo_whitebkg_stacked_64px.png")
+				%h5 Hibernate
+	.span2
+		%p<
+			%a{:href => "#", :rel => "tooltip" "top" "data-toggle", :title => "Tooltip"}
+				%img(src="http://design.jboss.org/hornetQ/logo/images/hornetQ_icon_64x64.png")
+				%h5 HornetQ
+	.span2
+		%p<
+			%a{:href => "#", :rel => "tooltip" "top" "data-toggle", :title => "Tooltip"}
+				%img(src="http://design.jboss.org/immutant/logo/finals/immutant_icon_64px.png")
+				%h5 Immutant
+
+				<br>
+
+	.span2
+		%p<
+			%a{:href => "#", :rel => "tooltip" "top" "data-toggle", :title => "Tooltip"}
+				%img(src="http://design.jboss.org/infinispan/logo/images/infinispan_icon_64px.png")
+				%h5 Infinispan
+	.span2
+		%p<
+			%a{:href => "#", :rel => "tooltip" "top" "data-toggle", :title => "Tooltip"}
+				%img(src="http://design.jboss.org/ironjacamar/logo/finals/ironjacamar_icon_64px.png")
+				%h5 IronJacamar
+	.span2
+		%p<
+		%i.blank_icon_64x.icon-minus-sign.icon-4x.icon-fixed-width
+		%p<
+			%a{:href => "#", :rel => "tooltip" "top" "data-toggle", :title => "Tooltip"}
+				%h5 Javassist
+	.span2
+		%p<
+			%a{:href => "#", :rel => "tooltip" "top" "data-toggle", :title => "Tooltip"}
+				%img(src="http://design.jboss.org/jbossAS/logo/final/jbossas7_ligature_64px.png")
+				%h5 JBoss App Server 7
+	.span2
+		%p<
+		%i.blank_icon_64x.icon-minus-sign.icon-4x.icon-fixed-width
+		%p<
+			%a{:href => "#", :rel => "tooltip" "top" "data-toggle", :title => "Tooltip"}
+				%h5 OSGi
+	.span2
+		%p<
+		%i.blank_icon_64x.icon-minus-sign.icon-4x.icon-fixed-width
+		%p<
+			%a{:href => "#", :rel => "tooltip" "top" "data-toggle", :title => "Tooltip"}
+				%h5 JBoss Build
+
+				<br>
+:javascript
+	$(function () {
+		$('a[rel=tooltip]').tooltip();
+	});
+
+
