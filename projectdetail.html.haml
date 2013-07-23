@@ -1,0 +1,370 @@
+---
+layout: project-nav
+title: Projects
+---
+
+/ =========================Project Header=========================
+.row-fluid.page-header
+	.span12
+		.span10
+			%h1 Projects
+		.row-fluid.controls
+			.span2
+				%div.pull-right
+					%p View Selector
+					%a.btn{:href => "projectthumbnail.html"}
+						%i.icon-th.icon-1x
+					%a.btn{:href => "projectdetail.html"}
+						%i.icon-th-list.icon-1x
+
+/ =========================Project Filter=========================
+.row-fluid.controls
+	.span12
+		%form.form-inline.well
+			%fieldset
+				.span2.control-group
+					.controls
+						%div
+						%label.checkbox
+							%input#optionsCheckbox(type="checkbox" value="Projects")
+							Projects
+						%div
+						%label.checkbox
+							%input#optionsCheckbox(type="checkbox" value="Standards")
+							Standards
+				.span3.control-group
+					.controls
+						%div
+						%label.control-label(for="select01")
+						Product
+						%select#select01
+							%option
+							%option AeroGear
+							%option APIviz
+							%option Arquillian
+							%option Blacktie
+				.span3.control-group
+					.controls
+						%div
+						%label.control-label(for="select01")
+						Solution
+						%select#select02
+							%option
+							%option AeroGear
+							%option APIviz
+							%option Arquillian
+							%option Blacktie
+				%br
+				.span4.control-group
+					.controls
+						%div
+							%form.form-search
+							%input.input-append.input-xlarge.search-query{:type => "text"}/
+							%button.btn.icon-search{:type => "submit"}
+
+
+<br>
+
+/ =========================Project List=========================
+.row
+	.span12
+		%table.table.table-bordered.table-striped
+			%thead
+				%tr
+					%th Name
+					%th Description
+					%th Engineering Links
+					%th License
+			%tbody
+				%tr
+					%td
+						.project-icon-med.aerogear_icon_16x  
+						%a{:href => "http://aerogear.org/"}AeroGear
+					%td Libraries to simplify & unify mobile development across different platforms.
+					%td
+						%a{:href => "link"}Project Page
+						|
+						%a{:href => "https://github.com/aerogear"}Code
+						|
+						%a{:href => "http://aerogear.org/docs/"}Doc
+						|
+						%a{:href => "link"}Jenkins
+						|
+						%a{:href => "https://issues.jboss.org/browse/AEROGEAR"}Jira
+						|
+						%a{:href => "http://aerogear.org/download/"}Downloads
+					%td LGPL
+				%tr
+					%td
+						.project-icon-med.apiviz_icon_16x
+						%a{:href => "http://www.jboss.org/apiviz"}APIviz
+					%td APIviz is a JavaDoc doclet which extends the Java standard doclet.
+					%td
+						%a{:href => "https://code.google.com/p/apiviz/"}Project Page
+						|
+						%a{:href => "link"}Code
+						|
+						%a{:href => "link"}Doc
+						|
+						%a{:href => "link"}Jenkins
+						|
+						%a{:href => "https://issues.jboss.org/browse/APIVIZ"}Jira
+						|
+						%a{:href => "https://code.google.com/p/apiviz/downloads/list"}Downloads
+					%td LGPL
+				%tr
+					%td
+						.project-icon-med.arquillian_icon_16x
+						%a{:href => "http://arquillian.org/"}Arquillian
+					%td No more container lifecycle & deployment hassles. Just real tests!
+					%td
+						%a{:href => "http://arquillian.org/"}Project Page
+						|
+						%a{:href => "https://github.com/arquillian"}Code
+						|
+						%a{:href => "http://arquillian.org/guides/"}Doc
+						|
+						%a{:href => "link"}Jenkins
+						|
+						%a{:href => "https://issues.jboss.org/browse/ARQ"}Jira
+						|
+						%a{:href => "link"}Downloads
+					%td LGPL
+				%tr
+					%td
+						.project-icon-med.blacktie_icon_16x
+						%a{:href => "link"}Blacktie
+					%td Bridging the gap between JEE and XATMI
+					%td
+						%a{:href => "http://www.jboss.org/jbosstm"}Project Page
+						|
+						%a{:href => "https://source.jboss.org/browse/Blacktie"}Code
+						|
+						%a{:href => "http://www.jboss.org/jbosstm"}Doc
+						|
+						%a{:href => "link"}Jenkins
+						|
+						%a{:href => "https://issues.jboss.org/browse/JBTM"}Jira
+						|
+						%a{:href => "http://www.jboss.org/jbosstm"}Downloads
+					%td LGPL
+				%tr
+					%td
+						.project-icon-med.boxgrinder_icon_16x
+						%a{:href => "http://boxgrinder.org/"}BoxGrinder
+					%td Grind out appliances for multiple virtualization and Cloud providers.
+					%td
+						%a{:href => "link"}Project Page
+						|
+						%a{:href => "http://boxgrinder.org/development/"}Code
+						|
+						%a{:href => "http://boxgrinder.org/tutorials/"}Doc
+						|
+						%a{:href => "link"}Jenkins
+						|
+						%a{:href => "http://boxgrinder.org/community/"}Jira
+						|
+						%a{:href => "http://boxgrinder.org/"}Downloads
+					%td LGPL
+				%tr
+					%td
+						.project-icon-med.byteman_icon_16x
+						%a{:href => "link"}Byteman
+					%td Byteman is a tool which simplifies tracing and testing of Java programs.
+					%td
+						%a{:href => "link"}Project Page
+						|
+						%a{:href => "link"}Code
+						|
+						%a{:href => "link"}Doc
+						|
+						%a{:href => "link"}Jenkins
+						|
+						%a{:href => "link"}Jira
+						|
+						%a{:href => "link"}Downloads
+					%td LGPL
+				%tr
+					%td
+						.project-icon-med.capedwarf_icon_16x
+						%a{:href => "link"}CapeDwarf
+					%td Fully implement all the APIs of the Google App Engine.
+					%td
+						%a{:href => "link"}Project Page
+						|
+						%a{:href => "link"}Code
+						|
+						%a{:href => "link"}Doc
+						|
+						%a{:href => "link"}Jenkins
+						|
+						%a{:href => "link"}Jira
+						|
+						%a{:href => "link"}Downloads
+					%td LGPL
+				%tr
+					%td
+						.project-icon-med.drools_icon_16x
+						%a{:href => "link"}Drools
+					%td The Business Logic integration Platform
+					%td
+						%a{:href => "link"}Project Page
+						|
+						%a{:href => "link"}Code
+						|
+						%a{:href => "link"}Doc
+						|
+						%a{:href => "link"}Jenkins
+						|
+						%a{:href => "link"}Jira
+						|
+						%a{:href => "link"}Downloads
+					%td LGPL
+				%tr
+					%td
+						.project-icon-med.blank_icon_16x
+						%a{:href => "link"}EJB3
+					%td Simplify the development of Enterprise Java applications.
+					%td
+						%a{:href => "link"}Project Page
+						|
+						%a{:href => "link"}Code
+						|
+						%a{:href => "link"}Doc
+						|
+						%a{:href => "link"}Jenkins
+						|
+						%a{:href => "link"}Jira
+						|
+						%a{:href => "link"}Downloads
+					%td LGPL
+				%tr
+					%td
+						.project-icon-med.embeddedjopr_icon_16x
+						%a{:href => "link"}Embedded Jopr
+					%td For managing & monitoring an instance of JBoss Application Server.
+					%td
+						%a{:href => "link"}Project Page
+						|
+						%a{:href => "link"}Code
+						|
+						%a{:href => "link"}Doc
+						|
+						%a{:href => "link"}Jenkins
+						|
+						%a{:href => "link"}Jira
+						|
+						%a{:href => "link"}Downloads
+					%td LGPL
+				%tr
+					%td
+						.project-icon-med.errai_icon_16x
+						%a{:href => "link"}Errai
+					%td Errai makes building your rich web application in GWT easier.
+					%td
+						%a{:href => "link"}Project Page
+						|
+						%a{:href => "link"}Code
+						|
+						%a{:href => "link"}Doc
+						|
+						%a{:href => "link"}Jenkins
+						|
+						%a{:href => "link"}Jira
+						|
+						%a{:href => "link"}Downloads
+					%td LGPL
+				%tr
+					%td
+						.project-icon-med.exojcr_icon_16x
+						%a{:href => "link"}eXo JCR
+					%td Open source implementation of the Java Specification Request 170.
+					%td
+						%a{:href => "link"}Project Page
+						|
+						%a{:href => "link"}Code
+						|
+						%a{:href => "link"}Doc
+						|
+						%a{:href => "link"}Jenkins
+						|
+						%a{:href => "link"}Jira
+						|
+						%a{:href => "link"}Downloads
+					%td LGPL
+				%tr
+					%td
+						.project-icon-med.forge_icon_16x
+						%a{:href => "link"}Forge
+					%td Fastest way to build applications, share software, & enjoy doing it.
+					%td
+						%a{:href => "link"}Project Page
+						|
+						%a{:href => "link"}Code
+						|
+						%a{:href => "link"}Doc
+						|
+						%a{:href => "link"}Jenkins
+						|
+						%a{:href => "link"}Jira
+						|
+						%a{:href => "link"}Downloads
+					%td LGPL
+				%tr
+					%td
+						.project-icon-med.gatein_icon_16x
+						%a{:href => "link"}GateIn
+					%td Use your preferred one web framework.
+					%td
+						%a{:href => "link"}Project Page
+						|
+						%a{:href => "link"}Code
+						|
+						%a{:href => "link"}Doc
+						|
+						%a{:href => "link"}Jenkins
+						|
+						%a{:href => "link"}Jira
+						|
+						%a{:href => "link"}Downloads
+					%td LGPL
+				%tr
+					%td
+						.project-icon-med.gatein_icon_16x
+						%a{:href => "link"}GateIn Portlet Container
+					%td The next generation portlet container
+					%td
+						%a{:href => "link"}Project Page
+						|
+						%a{:href => "link"}Code
+						|
+						%a{:href => "link"}Doc
+						|
+						%a{:href => "link"}Jenkins
+						|
+						%a{:href => "link"}Jira
+						|
+						%a{:href => "link"}Downloads
+					%td LGPL
+				%tr
+					%td
+						.project-icon-med.guvnor_icon_16x
+						%a{:href => "link"}Guvnor
+					%td The Guvnor project is home to the Governance Repository utilities and tools.
+					%td
+						%a{:href => "link"}Project Page
+						|
+						%a{:href => "link"}Code
+						|
+						%a{:href => "link"}Doc
+						|
+						%a{:href => "link"}Jenkins
+						|
+						%a{:href => "link"}Jira
+						|
+						%a{:href => "link"}Downloads
+					%td LGPL
+
+
+
+
