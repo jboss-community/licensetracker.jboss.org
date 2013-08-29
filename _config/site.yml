@@ -1,8 +1,8 @@
 # Default page title
-title: JBoss Community
+title: License Tracker
 
 # Project id name
-project: example
+project: licensetracker
 
 # Default minify settings
 css_minifier: disabled
@@ -55,7 +55,7 @@ wget:
     - http://static.jboss.org/theme/fonts/titilliumtext/
     - http://static.jboss.org/theme/fonts/font-awesome/
     - http://static.jboss.org/theme/images/common/
-    - http://static.jboss.org/images/example/
+    - http://static.jboss.org/images/licensetracker/
 
 # Update resource URLs based on the profile
 profiles:
@@ -63,17 +63,17 @@ profiles:
     jborg_fonts_url: /cache/static.jboss.org/theme/fonts
     jborg_images_url: /cache/static.jboss.org/theme/images
     jborg_js_url: /cache/static.jboss.org/theme/js
-    project_images_url: /cache/static.jboss.org/images/example
+    project_images_url: /cache/static.jboss.org/images/licensetracker
     bootstrap_css_url: /stylesheets/bootstrap-community
     bootstrap_js_url: /javascripts/bootstrap-community
   staging:
     jborg_fonts_url: http://static.jboss.org/theme/fonts
     jborg_images_url: http://static.jboss.org/theme/images
     jborg_js_url: http://static.jboss.org/theme/js
-    project_images_url: http://static.jboss.org/images/example
+    project_images_url: http://static.jboss.org/images/licensetracker
     bootstrap_css_url: http://static.jboss.org/theme/css/bootstrap-community/2.3.1.0/bootstrap-community
     bootstrap_js_url: http://static.jboss.org/theme/js/libs/bootstrap-community/2.3.1.0/bootstrap-community
-    base_url: http://example-stg.jboss.org
+    base_url: http://licensetracker-stg.jboss.org
   production:
     minified: .min
     css_minifier: enabled
@@ -82,7 +82,7 @@ profiles:
     jborg_fonts_url: http://static.jboss.org/theme/fonts
     jborg_images_url: http://static.jboss.org/theme/images
     jborg_js_url: http://static.jboss.org/theme/js
-    project_images_url: http://static.jboss.org/images/example
+    project_images_url: http://static.jboss.org/images/licensetracker
     bootstrap_css_url: http://static.jboss.org/theme/css/bootstrap-community/2.3.1.0/bootstrap-community
     bootstrap_js_url: http://static.jboss.org/theme/js/libs/bootstrap-community/2.3.1.0/bootstrap-community
-    base_url: http://example.jboss.org
+    base_url: http://licensetracker.jboss.org
