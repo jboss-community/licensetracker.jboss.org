@@ -4,8 +4,18 @@ rightcol_partial: rightcol-releases.html.haml
 title: Project Name Releases
 ---
 
-%h2 Project Name Releases
+.btn-group.pull-right{:style => "padding-top: 20px;"}
+	%a.btn.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+		Action
+		%span.caret
+	%ul.dropdown-menu
+		%li
+			%a Edit project information
+		%li
+			%a Delete Project
 
+%h2 Project Name Releases
+					
 %table.table.table-bordered.table-striped
 	%thead
 		%tr
